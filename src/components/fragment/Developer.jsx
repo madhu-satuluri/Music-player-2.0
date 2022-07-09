@@ -1,8 +1,5 @@
 import React from 'react';
 import '../assets/scss/Developer.scss';
-import {IconButton} from "@material-ui/core";
-import AvatarImage from "../assets/img/avatar.jpg";
-import {Facebook, Instagram, LinkedIn, Portrait, Twitter} from "@material-ui/icons";
 
 const Developer = () => {
     return (
@@ -10,36 +7,10 @@ const Developer = () => {
             <h3 className={"Developer-head"}>Meet the developer</h3>
             <div className="Developer-profile">
                 <div className="Developer-profileCard">
-                    <img src={AvatarImage} alt="Profile"/>
+                    <img src="data:image/jpeg;base64,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" alt="Profile"/>
                     <div className={"Card-details"}>
-                        <h3>Vishal Singh</h3>
-                        <p>Full Stack developer</p>
-                        <p>Competitive Coder</p>
-                    </div>
-                </div>
-                <div className="Developer-profileDetails">
-                    <p>A Computer Science and Engineering Student at Lovely Professional University, Punjab.</p>
-                    <p>Graduating in 2022 and looking for a responsible position to gain practical knowledge</p>
-                    <p>A full-stack web developer and a Competitive coder.</p>
-                    <p>I love designing fully responsive websites.</p>
-                    <p>I have a keen interest in developing projects, whenever I want to learn something new.</p>
-                    <p>And a blogger.</p>
-                    <div className="Card-btn">
-                        <IconButton target={"_blank"}  href={"https://www.facebook.com/vishal.kld"} title={"vishal.kld"}>
-                            <Facebook/>
-                        </IconButton>
-                        <IconButton target={"_blank"} href={"https://twitter.com/Vishal_kld"}  title={"Vishal_kld"}>
-                            <Twitter/>
-                        </IconButton>
-                        <IconButton target={"_blank"} href={"https://www.linkedin.com/in/vishalsingh-/"}  title={"vishalsingh-"}>
-                            <LinkedIn/>
-                        </IconButton>
-                        <IconButton target={"_blank"} href={"https://www.instagram.com/vishalsingh023/"}  title={"vishalsingh023"}>
-                            <Instagram/>
-                        </IconButton>
-                        <IconButton target={"_blank"} href={"https://vishal.thetechnician.in/"}  title={"Web Portfolio"}>
-                            <Portrait/>
-                        </IconButton>
+                        <h3>Madhu Priya</h3>
+                        <p>Student at VNRVJIET</p>
                     </div>
                 </div>
 
